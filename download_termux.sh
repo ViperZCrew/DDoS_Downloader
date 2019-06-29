@@ -334,6 +334,7 @@ if [[ "$inp1" = 14 ]]; then
 fi  
 
 if [[ "$inp1" = 15 ]]; then
+	cd /$HOME
 	git clone https://github.com/4L13199/LITEDDOS
 	cd LITEDDOS && chmod 777 *py
 	clear
