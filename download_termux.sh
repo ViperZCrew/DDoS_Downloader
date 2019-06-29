@@ -344,7 +344,7 @@ if [[ "$inp1" = 15 ]]; then
 	read -p "[+] Do you want to run the ddos-tool?[Y/N] " run
 	if [[ "$run" = "Y" || "$run" = "y" ]]; then
 		clear
-		python hulk.py
+		python2 LITEDDOS.py
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
 		bash download_termux.sh
