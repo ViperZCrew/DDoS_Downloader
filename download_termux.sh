@@ -65,7 +65,7 @@ if [[ "$inp1" = 1 ]]; then
 		python2 ddos-attack.py
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash downloader_termux.sh
+		bash download_termux.sh
 	fi
 fi
 
@@ -77,7 +77,7 @@ if [[ "$inp1" = 2 ]]; then
 		hping3 -h
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash downloader_termux.sh
+		bash download_termux.sh
 	fi
 fi
 
@@ -92,7 +92,7 @@ if [[ "$inp1" = 3 ]]; then
 		anevicon
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash downloader_termux.sh
+		bash download_termux.sh
 	fi
 fi
 
@@ -110,7 +110,7 @@ if [[ "$inp1" = 4 ]]; then
 		cat usage.txt
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash downloader_termux.sh
+		bash download_termux.sh
 	fi
 fi
 
@@ -126,7 +126,7 @@ if [[ "$inp1" = 5 ]]; then
 		python3 pyddoz.py
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash downloader_termux.sh
+		bash download_termux.sh
 	fi
 fi
 
@@ -142,7 +142,7 @@ if [[ "$inp1" = 6 ]]; then
 		python2 dark-fantasy-2.0.3.py
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash downloader_termux.sh
+		bash download_termux.sh
 	fi
 fi
 
@@ -161,7 +161,7 @@ if [[ "$inp1" = 7 ]]; then
 		python2 DDos-anonymous.py
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash downloader_termux.sh
+		bash download_termux.sh
 	fi
 fi    
     
@@ -231,7 +231,7 @@ if [[ "$inp1" = 8 ]]; then
 		"
 		sleep 1
 		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash downloader_termux.sh
+		bash download_termux.sh
 	fi
 fi    	
 	
@@ -246,7 +246,7 @@ if [[ "$inp1" = 9 ]]; then
 		python3 hammer.py -h
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash downloader_termux.sh
+		bash download_termux.sh
 	fi
 fi  
 
@@ -261,7 +261,7 @@ if [[ "$inp1" = 10 ]]; then
 		python2 torshammer.py -h
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash downloader_termux.sh
+		bash download_termux.sh
 	fi
 fi  	
 
@@ -279,7 +279,7 @@ if [[ "$inp1" = 11 ]]; then
 		python2 fl00d2.py
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash downloader_termux.sh
+		bash download_termux.sh
 	fi
 fi  	
 
@@ -297,7 +297,7 @@ if [[ "$inp1" = 12 ]]; then
 		python2 goldeneye.py
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash downloader_termux.sh
+		bash download_termux.sh
 	fi
 fi  	
 
@@ -315,7 +315,7 @@ if [[ "$inp1" = 13 ]]; then
 		python2 pntddos.py
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash downloader_termux.sh
+		bash download_termux.sh
 	fi
 fi  		
 
@@ -331,7 +331,7 @@ if [[ "$inp1" = 14 ]]; then
 		python2 hulk.py
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash downloader_termux.sh
+		bash download_termux.sh
 	fi
 fi  
 
@@ -347,7 +347,7 @@ if [[ "$inp1" = 15 ]]; then
 		python hulk.py
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash downloader_termux.sh
+		bash download_termux.sh
 	fi
 fi 
 
@@ -363,7 +363,7 @@ if [[ "$inp1" = 16 ]]; then
 		python2 pyflooder.py 
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash downloader_termux.sh
+		bash download_termux.sh
 	fi
 fi 
 
@@ -381,7 +381,7 @@ if [[ "$inp1" = 17 ]]; then
 		./ufonet --gui 
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash downloader_termux.sh
+		bash download_termux.sh
 	fi
 fi 
 
@@ -396,7 +396,7 @@ if [[ "$inp1" = 18 ]]; then
 		./pentmenu 
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash downloader_termux.sh
+		bash download_termux.sh
 	fi
 fi 
 
@@ -412,7 +412,7 @@ if [[ "$inp1" = 19 ]]; then
 		python3 UNSTABLE.py
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash downloader_termux.sh
+		bash download_termux.sh
 	fi
 fi 
 
@@ -428,7 +428,7 @@ if [[ "$inp1" = 20 ]]; then
 		python2 zambie.py
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash downloader_termux.sh
+		bash download_termux.sh
 	fi
 fi 
 	
@@ -444,7 +444,7 @@ if [[ "$inp1" = 21 ]]; then
 		python2 wascan.py -h
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash downloader_termux.sh
+		bash download_termux.sh
 	fi
 fi	
 
