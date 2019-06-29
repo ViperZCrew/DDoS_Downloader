@@ -34,9 +34,10 @@ echo -e $BLUE "
 OPTIONS:
 
 1. Update & Upgrade System and Script
-2. Download The Full DDoS Pack
-3. Credits
-4. Exit
+2. Download The Full DDoS Pack (Linux)
+3. Download The Full DDoS Pack (Termux)
+4. Credits
+5. Exit
 "
 
 echo -e $CYAN ""
@@ -52,15 +53,18 @@ if [[ "$inp1" = 1 ]]; then
 	bash ddos_installer.sh
 fi 
 
-
-
 if [[ "$inp1" = 2 ]]; then
-	echo -e $MAGENTA "Starting downloader..."
+	echo -e $MAGENTA "Starting downloader for linux..."
 	sleep 1
 	bash downloader.sh
 fi
 
-if [[ "$inp1" = 3 ]]; then
+f [[ "$inp1" = 3 ]]; then
+	echo -e $MAGENTA "Starting downloader for termux..."
+	sleep 1
+	bash download_termux.sh
+	
+if [[ "$inp1" = 4 ]]; then
 
 	echo -e $CYAN "
  ▄█    █▄   ▄█     ▄███████▄    ▄████████    ▄████████  ▄███████▄   ▄████████    ▄████████    ▄████████  ▄█     █▄  
@@ -75,6 +79,6 @@ if [[ "$inp1" = 3 ]]; then
 "
 fi
 
-if [[ "$inp1" = 4 ]]; then
+if [[ "$inp1" = 5 ]]; then
 	exit
 fi
