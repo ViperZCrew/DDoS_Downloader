@@ -62,7 +62,7 @@ if [[ "$inp1" = 1 ]]; then
 	clear
 	read -p "[+] Do you want to run the ddos-tool?[Y/N] " run
 	if [[ "$run" = "Y" || "$run" = "y" ]]; then
-		python ddos-attack.py
+		python2 ddos-attack.py
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
 		bash downloader_termux.sh
@@ -134,6 +134,7 @@ if [[ "$inp1" = 6 ]]; then
 	cd /$HOME 
 	apt install python2
 	git clone https://github.com/ritvikb99/dark-fantasy-hack-tool
+	cd dark-fantasy-hack-tool
 	pip2 install html2text
 	clear
 	read -p "[+] Do you want to run the ddos-tool?[Y/N] " run
@@ -148,8 +149,8 @@ fi
 if [[ "$inp1" = 7 ]]; then
 	cd /$HOME
 	apt install git 
-    git clone https://github.com/M0HAM3D/DDos-Anonymous
-    cd DDos-Anonymous
+    	git clone https://github.com/M0HAM3D/DDos-Anonymous
+    	cd DDos-Anonymous
 	bash install.sh -y
 	clear
 	read -p "[+] Do you want to run the ddos-tool?[Y/N] " run
@@ -270,6 +271,7 @@ if [[ "$inp1" = 11 ]]; then
 	curl -O https://raw.githubusercontent.com/Gameye98/Gameye98.github.io/master/scripts/fl00d2.py
 	mkdir ~/fl00d
 	mv fl00d.py ~/fl00d && mv fl00d2.py ~/fl00d
+	cd fl00d
 	clear
 	read -p "[+] Do you want to run the fl00d2 ddos-tool?[Y/N] " run
 	if [[ "$run" = "Y" || "$run" = "y" ]]; then
@@ -292,7 +294,7 @@ if [[ "$inp1" = 12 ]]; then
 	read -p "[+] Do you want to run the ddos-tool?[Y/N] " run
 	if [[ "$run" = "Y" || "$run" = "y" ]]; then
 		clear
-		./goldeneye.py
+		python2 goldeneye.py
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
 		bash downloader_termux.sh
@@ -326,7 +328,7 @@ if [[ "$inp1" = 14 ]]; then
 	read -p "[+] Do you want to run the ddos-tool?[Y/N] " run
 	if [[ "$run" = "Y" || "$run" = "y" ]]; then
 		clear
-		python hulk.py
+		python2 hulk.py
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
 		bash downloader_termux.sh
@@ -358,7 +360,7 @@ if [[ "$inp1" = 16 ]]; then
 	read -p "[+] Do you want to run the ddos-tool?[Y/N] " run
 	if [[ "$run" = "Y" || "$run" = "y" ]]; then
 		clear
-		python hulk.py
+		python2 pyflooder.py 
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
 		bash downloader_termux.sh
@@ -423,7 +425,7 @@ if [[ "$inp1" = 20 ]]; then
 	read -p "[+] Do you want to run the ddos-tool?[Y/N] " run
 	if [[ "$run" = "Y" || "$run" = "y" ]]; then
 		clear
-		./zambie.py
+		python2 zambie.py
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
 		bash downloader_termux.sh
@@ -439,7 +441,7 @@ if [[ "$inp1" = 21 ]]; then
 	read -p "[+] Do you want to run the ddos-tool?[Y/N] " run
 	if [[ "$run" = "Y" || "$run" = "y" ]]; then
 		clear
-		python wascan.py -h
+		python2 wascan.py -h
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
 		bash downloader_termux.sh
