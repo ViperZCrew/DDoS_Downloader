@@ -10,34 +10,27 @@ MAGENTA="\e[35m"
 CYAN="\e[36m"
 RESTORE="\e[39"
 
-echo -e $RED 
-
-echo -e "
-▓█████▄ ▓█████▄  ▒█████    ██████    ▓█████▄  ▒█████   █     █░███▄    █  ██▓     ▒█████   ▄▄▄      ▓█████▄ ▓█████  ██▀███  
-▒██▀ ██▌▒██▀ ██▌▒██▒  ██▒▒██    ▒    ▒██▀ ██▌▒██▒  ██▒▓█░ █ ░█░██ ▀█   █ ▓██▒    ▒██▒  ██▒▒████▄    ▒██▀ ██▌▓█   ▀ ▓██ ▒ ██▒
-░██   █▌░██   █▌▒██░  ██▒░ ▓██▄      ░██   █▌▒██░  ██▒▒█░ █ ░█▓██  ▀█ ██▒▒██░    ▒██░  ██▒▒██  ▀█▄  ░██   █▌▒███   ▓██ ░▄█ ▒
-░▓█▄   ▌░▓█▄   ▌▒██   ██░  ▒   ██▒   ░▓█▄   ▌▒██   ██░░█░ █ ░█▓██▒  ▐▌██▒▒██░    ▒██   ██░░██▄▄▄▄██ ░▓█▄   ▌▒▓█  ▄ ▒██▀▀█▄  
-░▒████▓ ░▒████▓ ░ ████▓▒░▒██████▒▒   ░▒████▓ ░ ████▓▒░░░██▒██▓▒██░   ▓██░░██████▒░ ████▓▒░ ▓█   ▓██▒░▒████▓ ░▒████▒░██▓ ▒██▒
- ▒▒▓  ▒  ▒▒▓  ▒ ░ ▒░▒░▒░ ▒ ▒▓▒ ▒ ░    ▒▒▓  ▒ ░ ▒░▒░▒░ ░ ▓░▒ ▒ ░ ▒░   ▒ ▒ ░ ▒░▓  ░░ ▒░▒░▒░  ▒▒   ▓▒█░ ▒▒▓  ▒ ░░ ▒░ ░░ ▒▓ ░▒▓░
- ░ ▒  ▒  ░ ▒  ▒   ░ ▒ ▒░ ░ ░▒  ░ ░    ░ ▒  ▒   ░ ▒ ▒░   ▒ ░ ░ ░ ░░   ░ ▒░░ ░ ▒  ░  ░ ▒ ▒░   ▒   ▒▒ ░ ░ ▒  ▒  ░ ░  ░  ░▒ ░ ▒░
- ░ ░  ░  ░ ░  ░ ░ ░ ░ ▒  ░  ░  ░      ░ ░  ░ ░ ░ ░ ▒    ░   ░    ░   ░ ░   ░ ░   ░ ░ ░ ▒    ░   ▒    ░ ░  ░    ░     ░░   ░ 
-   ░       ░        ░ ░        ░        ░        ░ ░      ░            ░     ░  ░    ░ ░        ░  ░   ░       ░  ░   ░     
- ░       ░                            ░                                                              ░                      
-"
-
+printf '\e[8;30;90t'
+clear
+echo -e $RED '
+·▄▄▄▄  ·▄▄▄▄        .▄▄ ·     ·▄▄▄▄        ▄▄▌ ▐ ▄▌ ▐ ▄ ▄▄▌         ▄▄▄· ·▄▄▄▄  ▄▄▄ .▄▄▄  
+██▪ ██ ██▪ ██ ▪     ▐█ ▀.     ██▪ ██ ▪     ██· █▌▐█•█▌▐███•  ▪     ▐█ ▀█ ██▪ ██ ▀▄.▀·▀▄ █·
+▐█· ▐█▌▐█· ▐█▌ ▄█▀▄ ▄▀▀▀█▄    ▐█· ▐█▌ ▄█▀▄ ██▪▐█▐▐▌▐█▐▐▌██▪   ▄█▀▄ ▄█▀▀█ ▐█· ▐█▌▐▀▀▪▄▐▀▀▄ 
+██. ██ ██. ██ ▐█▌.▐▌▐█▄▪▐█    ██. ██ ▐█▌.▐▌▐█▌██▐█▌██▐█▌▐█▌▐▌▐█▌.▐▌▐█ ▪▐▌██. ██ ▐█▄▄▌▐█•█▌
+▀▀▀▀▀• ▀▀▀▀▀•  ▀█▄▀▪ ▀▀▀▀     ▀▀▀▀▀•  ▀█▄▀▪ ▀▀▀▀ ▀▪▀▀ █▪.▀▀▀  ▀█▄▀▪ ▀  ▀ ▀▀▀▀▀•  ▀▀▀ .▀  ▀
+'
 
 sleep 1
 echo " "
 echo " "
-echo " "
-echo -e $BLUE "
-OPTIONS:
 
-1. Update & Upgrade System and Script
-2. Download The Full DDoS Pack (Linux)
-3. Download The Full DDoS Pack (Termux)
-4. Credits
-5. Exit
+echo -e $BLUE "
+
+[1] Update And Upgrade System and Script
+[2] Download The Full DDoS Pack (Linux)
+[3] Print Computer Information
+[4] Credits
+[5] Exit
 "
 
 echo -e $CYAN ""
@@ -54,16 +47,18 @@ if [[ "$inp1" = 1 ]]; then
 fi 
 
 if [[ "$inp1" = 2 ]]; then
-	echo -e $MAGENTA "Starting downloader for linux..."
+	echo -e $MAGENTA "
+Starting downloader for linux..."
 	sleep 1
 	bash downloader.sh
 fi
 
-f [[ "$inp1" = 3 ]]; then
-	echo -e $MAGENTA "Starting downloader for termux..."
+if [[ "$inp1" = 3 ]]; then
+	neofetch
 	sleep 1
-	bash download_termux.sh
-	
+
+fi
+
 if [[ "$inp1" = 4 ]]; then
 
 	echo -e $CYAN "
