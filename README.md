@@ -34,7 +34,7 @@
 
 ## Windows-Tools
 
-I will upload the links for the Windows DDoS tools in the next days... keep waiting!
+Start the .bat file, or simply download for here manually: https://srv-file7.gofile.io/download/JUj4aA/all_ddos_windows_mrblackx.zip
 
 ## Disclaimer
  
