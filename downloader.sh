@@ -114,7 +114,7 @@ echo -e $MAGENTA "
                            by @viperzcrew
 "
 echo -e $RED 'Version	: v2.0'
-echo -e $GREEN 'Tools		: 22'
+echo -e $GREEN 'Tools		: 23'
 echo -e $MAGENTA 'Creator	: MrBlackX'
 echo -e $BLUE 'Telegram	: @ViperZCrew'
 echo ''
@@ -131,6 +131,7 @@ echo -e $CYAN "
 [17] UfoNet (Linux)			[18] Pentmenu Multi Tool (Termux + Linux)
 [19] Unstable DDoS Tool (Termux + Linux)[20] ZAmbie (Linux)
 [21] WAScan (Termux + Linux)		[22] PyLoris (Termux + Linux)
+[23] SlowLoris (Linux)
 [99] Exit"
 
 echo -e $YELLOW "
@@ -527,16 +528,33 @@ if [[ "$inp1" = 22 ]]; then
                 clear
                 python pyloris.py -h
         else 
-                cd $HOME/Desktop/DDoS_Downloader
+                cd $HOME/DDoS_Downloader
                 bash downloader.sh
         fi
+fi
+
+if [[ "$inp1" = 23 ]]; then
+	cd $HOME/DDoS_Downloader/DDoS-Tools
+	git clone https://github.com/maxkrivich/SlowLoris
+	pip install pyslowloris
+  cd SlowLoris
+  
+	echo -e $RED [*] USAGE: wascan.py --url http://www.site.com/
+	read -p "[+] Do you want to run the ddos-tool?[Y/N] " run
+	if [[ "$run" = "Y" || "$run" = "y" ]]; then
+    clear
+		slowloris
+	else
+		cd $HOME/DDoS_Downloader
+		bash downloader.sh
+	fi
 fi
 
 if [[ "$inp1" = 99 ]]; then
 	clear
 	read -p "[-] Do you want to join our channel?(Linux only)[Y/N]" que
 	if [[ "$que" == "Y" || "$que" == "y" ]]; then
-		firefox t.me/telegram.com
+		firefox t.me/viperzcrew
 	else
 		echo -e "[!] closing tool..."
 	fi
