@@ -131,7 +131,7 @@ echo -e $CYAN "
 [17] UfoNet (Linux)			[18] Pentmenu Multi Tool (Termux + Linux)
 [19] Unstable DDoS Tool (Termux + Linux)[20] ZAmbie (Linux)
 [21] WAScan (Termux + Linux)		[22] PyLoris (Termux + Linux)
-[23] SlowLoris (Linux)
+[23] SlowLoris (Linux)			[24] Python SYN Flood(Linux)
 [99] Exit"
 
 echo -e $YELLOW "
@@ -549,6 +549,21 @@ if [[ "$inp1" = 23 ]]; then
 		bash downloader.sh
 	fi
 fi
+
+if [[ "$inp1" = 24 ]]; then
+  cd $HOME/DDoS_Downloader/DDoS-tools
+  git clone https://github.com/EmreOvunc/Python-SYN-Flood-Attack-Tool
+  cd Python-SYN-Flood-Attack-Tool
+  read -p "[+] Do you want to run the ddos-tool?[Y/N] " run
+	if [[ "$run" = "Y" || "$run" = "y" ]]; then
+    clear
+		python3 py3_SYN-Flood.py
+	else
+		cd $HOME/DDoS_Downloader
+		bash downloader.sh
+	fi
+fi
+
 
 if [[ "$inp1" = 99 ]]; then
 	clear
