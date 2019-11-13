@@ -8,6 +8,98 @@ MAGENTA="\e[35m"
 CYAN="\e[36m"
 RESTORE="\e[39"
 
+FILE=$HOME/DDoS_Downloader/DDoS-Tools
+
+
+
+#Banner
+clear
+
+echo -e $MAGENTA '
+ ▄▄▄· ▄▄▄·  ▄▄· ▄ •▄  ▄▄▄·  ▄▄ • ▄▄▄ .     ▄▄·  ▄ .▄▄▄▄ . ▄▄· ▄ •▄ ▄▄▄ .▄▄▄  
+▐█ ▄█▐█ ▀█ ▐█ ▌▪█▌▄▌▪▐█ ▀█ ▐█ ▀ ▪▀▄.▀·    ▐█ ▌▪██▪▐█▀▄.▀·▐█ ▌▪█▌▄▌▪▀▄.▀·▀▄ █·
+ ██▀·▄█▀▀█ ██ ▄▄▐▀▀▄·▄█▀▀█ ▄█ ▀█▄▐▀▀▪▄    ██ ▄▄██▀▐█▐▀▀▪▄██ ▄▄▐▀▀▄·▐▀▀▪▄▐▀▀▄ 
+▐█▪·•▐█ ▪▐▌▐███▌▐█.█▌▐█ ▪▐▌▐█▄▪▐█▐█▄▄▌    ▐███▌██▌▐▀▐█▄▄▌▐███▌▐█.█▌▐█▄▄▌▐█•█▌
+.▀    ▀  ▀ ·▀▀▀ ·▀  ▀ ▀  ▀ ·▀▀▀▀  ▀▀▀     ·▀▀▀ ▀▀▀ · ▀▀▀ ·▀▀▀ ·▀  ▀ ▀▀▀ .▀  ▀
+'
+echo ''
+
+if [[ $figlet -eq 0 ]]; then
+	figlet -f digital "VIPERZCREW"
+else
+	apt install -y figlet
+	clear
+	figlet -f digital "VIPERZCREW"
+fi
+
+echo ''
+
+#checking if some packages and directory existing
+
+if [[ -d "$FILE" ]]; then
+	echo -e $GREEN "
+Directory Exists [✓]"
+	sleep 0.3
+else
+	echo -e $RED '
+Creating folder...[✗]'
+	mkdir DDoS-Tools
+fi
+
+function package_checker {
+
+	echo -ne "Python... -> "
+	if ! hash python 2>/dev/null; then
+		echo -e "\e[1;31mNot installed [✗]"
+		apt install python -y
+	else
+		echo -e "\e[;32mInstalled [✓]"
+	fi
+	sleep 0.3
+
+	echo -ne "Python2... -> "
+	if ! hash python2 2>/dev/null; then
+		echo -e "\e[1;31mNot installed [✗]"
+		apt install python2 -y
+	else
+		echo -e "\e[;32mInstalled [✓]"
+		
+	fi
+	sleep 0.3
+
+	echo -ne "Curl... -> "
+	if ! hash curl 2>/dev/null; then
+		echo -e "\e[1;31mNot installed [✗]"
+		apt install curl -y
+	else
+		echo -e "\e[;32mInstalled [✓]"
+	fi
+	sleep 0.3
+
+	echo -ne "Clang... -> "
+	if ! hash clang 2>/dev/null; then
+		echo -e "\e[1;31mNot installed [✗]"
+		apt install clang -y
+	else
+		echo -e "\e[;32mInstalled [✓]"		
+	fi
+	sleep 0.3
+	
+	echo -ne "Neofetch... -> "
+	if ! hash neofetch 2>/dev/null; then
+		echo -e "\e[1;31mNot installed [✗]"
+		apt install neofetch -y
+	else
+		echo -e "\e[;32mInstalled [✓]"
+	fi
+	sleep 0.3
+	
+}
+
+package_checker
+
+sleep 3
+
 echo -e $RED ""
 figlet Starting...
 
@@ -21,40 +113,34 @@ echo -e $MAGENTA "
  |___/|___/\___/___/   |_|\___/\___/_/__/                                 
                            by @viperzcrew
 "
-echo ""
-echo -e $BLUE "
-[?] Which tool do you want to install?
-
-[1] Ha3MrX's DDoSer
-[2] HPING3 (Only Linux! --> No Termux!)
-[3] Anevicon (Only Linux! --> No Termux!)
-[4] Xerxes
-[5] PyDDoZ
-[6] Dark Fantasy
-[7] DDoS Anoymous
-[8] DDoS Pack v1 (11 Tools) (Only Linux! --> No Termux!)
-[9] Hammer
-[10] Torshammer 
-[11] fl00d & fl00d2
-[12] GoldenEye
-[13] Planetwork DDoS Tool
-[14] Hulk
-[15] LITE DDoS
-[16] PyFlooder
-[17] UfoNet
-[18] Pentmenu Multi Tool
-[19] Unstable DDoS Tool
-[20] ZAmbie 
-[21] WAScan 
+echo -e $RED 'Version	: v2.0'
+echo -e $GREEN 'Tools		: 22'
+echo -e $MAGENTA 'Creator	: MrBlackX'
+echo -e $BLUE 'Telegram	: @ViperZCrew'
+echo ''
+echo -e $BLUE "[?] Which tool do you want to install?"
+echo -e $CYAN "
+[1] Ha3MrX's DDoSer (Termux + Linux) 	[2] HPING3 (Linux)
+[3] Anevicon (Linux)			[4] X̶e̶r̶x̶e̶s̶ (no longer available!)
+[5] PyDDoZ (Termux + Linux)		[6] Dark Fantasy (Termux + Linux)
+[7] DDoS Anoymous (Termux + Linux)	[8] DDoS Pack v1 (11 Tools) (Linux)
+[9] Hammer (Termux + Linux)		[10] Torshammer (Termux + Linux)
+[11] fl00d & fl00d2 (Termux + Linux)	[12] GoldenEye (Termux + Linux)
+[13] Planetwork Tool (Termux + Linux)	[14] Hulk (Termux + Linux)
+[15] LITE DDoS (Termux + Linux)		[16] PyFlooder (Termux + Linux)
+[17] UfoNet (Linux)			[18] Pentmenu Multi Tool (Termux + Linux)
+[19] Unstable DDoS Tool (Termux + Linux)[20] ZAmbie (Linux)
+[21] WAScan (Termux + Linux)		[22] PyLoris (Termux + Linux)
 [99] Exit"
 
-echo -e $BLUE "[*] More Tools Coming Soon!!"
+echo -e $YELLOW "
+[*] More Tools Coming Soon!!"
 
 echo -e $GREEN ""
 read -p "Enter a number: " inp1
 
 if [[ "$inp1" = 1 ]]; then
-	cd /$HOME
+	cd /data/data/com.termux/files/home/DDoS_Downloader/DDoS-Tools
 	apt install python git -y
 	git clone https://github.com/Ha3MrX/DDos-Attack
 	cd DDos-Attack
@@ -64,8 +150,8 @@ if [[ "$inp1" = 1 ]]; then
 	if [[ "$run" = "Y" || "$run" = "y" ]]; then
 		python2 ddos-attack.py
 	else 
-		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash download_termux.sh
+		cd $HOME/DDoS_Downloader
+		bash downloader.sh
 	fi
 fi
 
@@ -77,12 +163,12 @@ if [[ "$inp1" = 2 ]]; then
 		hping3 -h
 	else 
 		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash download_termux.sh
+		bash downloader.sh
 	fi
 fi
 
 if [[ "$inp1" = 3 ]]; then
-	cd /$HOME
+	cd /data/data/com.termux/files/home/DDoS_Downloader/DDoS-Tools
 	git clone https://github.com/Gymmasssorla/anevicon
 	cd anevicon
 	cargo build --release
@@ -91,31 +177,13 @@ if [[ "$inp1" = 3 ]]; then
 	if [[ "$run" = "Y" || "$run" = "y" ]]; then
 		anevicon
 	else 
-		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash download_termux.sh
-	fi
-fi
-
-if [[ "$inp1" = 4 ]]; then
-	cd /$HOME
-	git clone https://github.com/zanyarjamal/xerxes
-	cd xerxes
-	gcc xerxes.c -o xerxes
-	clear
-	echo -e $RED "USAGE : ./xerxes www.fakesite.com 80"
-	read -p " [+] Do you want to run the ddos-tool?[Y/N] " run
-	if [[ "$run" = "Y" || "$run" = "y" ]]; then
-		echo -e  "\e[31mUSAGE : ./xerxes www.fakesite.com 80" >> usage.txt
-		clear
-		cat usage.txt
-	else 
-		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash download_termux.sh
+		cd $HOME/DDoS_Downloader
+		bash downloader.sh
 	fi
 fi
 
 if [[ "$inp1" = 5 ]]; then
-	cd /$HOME
+	cd $HOME
 	apt install python -y
 	git clone https://github.com/0x01h/pyddoz
 	cd pyddoz
@@ -125,13 +193,13 @@ if [[ "$inp1" = 5 ]]; then
 	if [[ "$run" = "Y" || "$run" = "y" ]]; then
 		python3 pyddoz.py
 	else 
-		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash download_termux.sh
+		cd $HOME/DDoS_Downloader
+		bash downloader.sh
 	fi
 fi
 
 if [[ "$inp1" = 6 ]]; then
-	cd /$HOME 
+	cd /data/data/com.termux/files/home/DDoS_Downloader/DDoS-Tools
 	apt install python2
 	git clone https://github.com/ritvikb99/dark-fantasy-hack-tool
 	cd dark-fantasy-hack-tool
@@ -141,13 +209,13 @@ if [[ "$inp1" = 6 ]]; then
 	if [[ "$run" = "Y" || "$run" = "y" ]]; then
 		python2 dark-fantasy-2.0.3.py
 	else 
-		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash download_termux.sh
+		cd $HOME/DDoS_Downloader
+		bash downloader.sh
 	fi
 fi
 
 if [[ "$inp1" = 7 ]]; then
-	cd /$HOME
+	cd /data/data/com.termux/files/home/DDoS_Downloader/DDoS-Tools
 	apt install git 
     	git clone https://github.com/M0HAM3D/DDos-Anonymous
     	cd DDos-Anonymous
@@ -160,13 +228,13 @@ if [[ "$inp1" = 7 ]]; then
 		sleep 2
 		python2 DDos-anonymous.py
 	else 
-		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash download_termux.sh
+		cd $HOME/DDoS_Downloader
+		bash downloader.sh
 	fi
 fi    
     
 if [[ "$inp1" = 8 ]]; then
-	cd /$HOME
+	cd /data/data/com.termux/files/home/DDoS_Downloader/DDoS-Tools
 	apt update && apt upgrade -y
 	apt install gcc net-tools php php-dev -y
 	apt-get install libapr1-dev libaprutil1-dev -y
@@ -226,17 +294,17 @@ if [[ "$inp1" = 8 ]]; then
 	if [[ "$run" = "B" || "$run" = "b" ]]; then
 		clear
 		echo "To see the folder type:
-		cd /$HOME/DDoS-Scripts && ls
+		cd $HOME/DDoS-Scripts && ls
 		going back to the downloader site..
 		"
 		sleep 1
-		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash download_termux.sh
+		cd $HOME/DDoS_Downloader
+		bash downloader.sh
 	fi
 fi    	
 	
 if [[ "$inp1" = 9 ]]; then
-	cd /$HOME
+	cd /data/data/com.termux/files/home/DDoS_Downloader/DDoS-Tools
 	git clone https://github.com/cyweb/hammer
 	cd hammer && chmod 777 hammer.py
 	clear
@@ -245,13 +313,13 @@ if [[ "$inp1" = 9 ]]; then
 		clear
 		python3 hammer.py -h
 	else 
-		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash download_termux.sh
+		cd $HOME/DDoS_Downloader
+		bash downloader.sh
 	fi
 fi  
 
 if [[ "$inp1" = 10 ]]; then
-	cd /$HOME
+	cd /data/data/com.termux/files/home/DDoS_Downloader/DDoS-Tools
 	git clone https://github.com/dotfighter/torshammer
 	cd torshammer && chmod 777 *py
 	clear
@@ -260,13 +328,13 @@ if [[ "$inp1" = 10 ]]; then
 		clear
 		python2 torshammer.py -h
 	else 
-		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash download_termux.sh
+		cd $HOME/DDoS_Downloader
+		bash downloader.sh
 	fi
 fi  	
 
 if [[ "$inp1" = 11 ]]; then
-	cd /$HOME
+	cd /data/data/com.termux/files/home/DDoS_Downloader/DDoS-Tools
 	curl -O https://raw.githubusercontent.com/Gameye98/Gameye98.github.io/master/scripts/fl00d.py
 	curl -O https://raw.githubusercontent.com/Gameye98/Gameye98.github.io/master/scripts/fl00d2.py
 	mkdir ~/fl00d
@@ -278,13 +346,13 @@ if [[ "$inp1" = 11 ]]; then
 		clear
 		python2 fl00d2.py
 	else 
-		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash download_termux.sh
+		cd $HOME/DDoS_Downloader
+		bash downloader.sh
 	fi
 fi  	
 
 if [[ "$inp1" = 12 ]]; then
-	cd /$HOME
+	cd /data/data/com.termux/files/home/DDoS_Downloader/DDoS-Tools
 	git clone https://github.com/jseidl/GoldenEye && cd GoldenEye
 	chmod +rwx *py
 	service tor start
@@ -296,13 +364,13 @@ if [[ "$inp1" = 12 ]]; then
 		clear
 		python2 goldeneye.py
 	else 
-		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash download_termux.sh
+		cd $HOME/DDoS_Downloader
+		bash downloader.sh
 	fi
 fi  	
 
 if [[ "$inp1" = 13 ]]; then
-	cd /$HOME
+	cd /data/data/com.termux/files/home/DDoS_Downloader/DDoS-Tools
 	git clone https://github.com/Hydra7/Planetwork-DDOS
 	cd Planetwork-DDOS
 	clear
@@ -314,13 +382,13 @@ if [[ "$inp1" = 13 ]]; then
 		clear
 		python2 pntddos.py
 	else 
-		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash download_termux.sh
+		cd $HOME/DDoS_Downloader
+		bash downloader.sh
 	fi
 fi  		
 
 if [[ "$inp1" = 14 ]]; then
-	cd /$HOME
+	cd /data/data/com.termux/files/home/DDoS_Downloader/DDoS-Tools
 	git clone https://github.com/darkwarrior3/hulk && cd hulk
 	chmod +rwx hulk.py
 	clear
@@ -330,13 +398,13 @@ if [[ "$inp1" = 14 ]]; then
 		clear
 		python2 hulk.py
 	else 
-		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash download_termux.sh
+		cd $HOME/DDoS_Downloader
+		bash downloader.sh
 	fi
 fi  
 
 if [[ "$inp1" = 15 ]]; then
-	cd /$HOME
+	cd /data/data/com.termux/files/home/DDoS_Downloader/DDoS-Tools
 	git clone https://github.com/4L13199/LITEDDOS
 	cd LITEDDOS && chmod 777 *py
 	clear
@@ -344,15 +412,15 @@ if [[ "$inp1" = 15 ]]; then
 	read -p "[+] Do you want to run the ddos-tool?[Y/N] " run
 	if [[ "$run" = "Y" || "$run" = "y" ]]; then
 		clear
-		python2 LITEDDOS.py
+		python hulk.py
 	else 
-		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash download_termux.sh
+		cd $HOME/DDoS_Downloader
+		bash downloader.sh
 	fi
 fi 
 
 if [[ "$inp1" = 16 ]]; then
-	cd /$HOME
+	cd /data/data/com.termux/files/home/DDoS_Downloader/DDoS-Tools
 	git clone https://github.com/D4Vinci/PyFlooder
 	cd PyFlooder && chmod +rwx *
 	clear
@@ -362,13 +430,13 @@ if [[ "$inp1" = 16 ]]; then
 		clear
 		python2 pyflooder.py 
 	else 
-		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash download_termux.sh
+		cd $HOME/DDoS_Downloader
+		bash downloader.sh
 	fi
 fi 
 
 if [[ "$inp1" = 17 ]]; then
-	cd /$HOME
+	cd /data/data/com.termux/files/home/DDoS_Downloader/DDoS-Tools
 	git clone https://github.com/epsylon/ufonet
 	cd ufonet && chmod 777 *
 	apt install python-pycurl
@@ -380,13 +448,13 @@ if [[ "$inp1" = 17 ]]; then
 		clear
 		./ufonet --gui 
 	else 
-		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash download_termux.sh
+		cd $HOME/DDoS_Downloader
+		bash downloader.sh
 	fi
 fi 
 
 if [[ "$inp1" = 18 ]]; then
-	cd /$HOME
+	cd /data/data/com.termux/files/home/DDoS_Downloader/DDoS-Tools
 	git clone https://github.com/chetan31295/pentmenu
 	cd pentmenu && chmod +rwx *
 	clear
@@ -395,13 +463,13 @@ if [[ "$inp1" = 18 ]]; then
 		clear
 		./pentmenu 
 	else 
-		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash download_termux.sh
+		cd $HOME/DDoS_Downloader
+		bash downloader.sh
 	fi
 fi 
 
 if [[ "$inp1" = 19 ]]; then
-	cd /$HOME
+	cd /data/data/com.termux/files/home/DDoS_Downloader/DDoS-Tools
 	git clone https://github.com/iJoshoa/UnstableDDoS
 	cd UnstableDDoS && chmod +rwx *
 	pip3 install pysocks bs4 scapy-python3
@@ -411,13 +479,13 @@ if [[ "$inp1" = 19 ]]; then
 		clear
 		python3 UNSTABLE.py
 	else 
-		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash download_termux.sh
+		cd $HOME/DDoS_Downloader
+		bash downloader.sh
 	fi
 fi 
 
 if [[ "$inp1" = 20 ]]; then
-	/$HOME
+	$HOME/DDoS_Downloader/DDoS-Tools
 	git clone https://github.com/zanyarjamal/zambie.git
 	cd zambie && chmod +rwx *
 	./Installer.sh
@@ -427,13 +495,13 @@ if [[ "$inp1" = 20 ]]; then
 		clear
 		python2 zambie.py
 	else 
-		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash download_termux.sh
+		cd $HOME/DDoS_Downloader
+		bash downloader.sh
 	fi
 fi 
 	
 if [[ "$inp1" = 21 ]]; then
-	cd /$HOME
+	cd /data/data/com.termux/files/home/DDoS_Downloader/DDoS-Tools
 	git clone https://github.com/m4ll0k/Spaghetti
 	cd Spaghetti && chmod +rwx *
 	clear
@@ -443,15 +511,42 @@ if [[ "$inp1" = 21 ]]; then
 		clear
 		python2 wascan.py -h
 	else 
-		cd /data/data/com.termux/files/home/DDoS_Downloader
-		bash download_termux.sh
+		cd $HOME/DDoS_Downloader
+		bash downloader.sh
 	fi
-fi	
+fi
+
+if [[ "$inp1" = 22 ]]; then
+	cd /data/data/com.termux/files/home/DDoS_Downloader/DDoS-Tools
+	curl -LO https://downloads.sourceforge.net/project/pyloris/pyloris/3.2/pyloris-3.2.zip
+	unzip pyloris-3.2.zip
+	cd pyloris-3.2
+	rm -rf *.zip
+	read -p "[+] Do you want to run the ddos-tool?[Y/N] " run
+        if [[ "$run" = "Y" || "$run" = "y" ]]; then
+                clear
+                python pyloris.py -h
+        else 
+                cd $HOME/Desktop/DDoS_Downloader
+                bash downloader.sh
+        fi
+fi
 
 if [[ "$inp1" = 99 ]]; then
 	clear
-	echo -e $MAGENTA "Exiting..."
-	echo -e $BLUE "Thanks for using our script."
-	echo -e $GREEN "[*]" echo $YELLOW"Successfully closed!"
+	read -p "[-] Do you want to join our channel?(Linux only)[Y/N]" que
+	if [[ "$que" == "Y" || "$que" == "y" ]]; then
+		firefox t.me/telegram.com
+	else
+		echo -e "[!] closing tool..."
+	fi
+	echo -e $MAGENTA "
+Exiting..."
+	sleep 0.5
+	echo -e $BLUE "
+Thanks for using our script."
+	sleep 0.5
+	echo -e $GREEN "
+[*] Successfully closed!"
 	exit
 fi
