@@ -131,7 +131,6 @@ echo -e $CYAN "
 [17] UfoNet (Linux)			[18] Pentmenu Multi Tool (Termux + Linux)
 [19] Unstable DDoS Tool (Termux + Linux)[20] ZAmbie (Linux)
 [21] WAScan (Termux + Linux)		[22] PyLoris (Termux + Linux)
-
 [99] Exit"
 
 echo -e $YELLOW "
@@ -151,7 +150,7 @@ if [[ "$inp1" = 1 ]]; then
 	if [[ "$run" = "Y" || "$run" = "y" ]]; then
 		python2 ddos-attack.py
 	else 
-		cd $HOME/Desktop/DDoS_Downloader
+		cd $HOME/DDoS_Downloader
 		bash downloader.sh
 	fi
 fi
@@ -163,7 +162,7 @@ if [[ "$inp1" = 2 ]]; then
 	if [[ "$run" = "Y" || "$run" = "y" ]]; then
 		hping3 -h
 	else 
-		cd $HOME/Desktop/DDoS_Downloader/
+		cd $HOME/DDoS_Downloader/
 		bash downloader.sh
 	fi
 fi
@@ -178,7 +177,7 @@ if [[ "$inp1" = 3 ]]; then
 	if [[ "$run" = "Y" || "$run" = "y" ]]; then
 		anevicon
 	else 
-		cd $HOME/Desktop/DDoS_Downloader
+		cd $HOME/DDoS_Downloader
 		bash downloader.sh
 	fi
 fi
@@ -194,7 +193,7 @@ if [[ "$inp1" = 5 ]]; then
 	if [[ "$run" = "Y" || "$run" = "y" ]]; then
 		python3 pyddoz.py
 	else 
-		cd $HOME/Desktop/DDoS_Downloader
+		cd $HOME/DDoS_Downloader
 		bash downloader.sh
 	fi
 fi
@@ -210,7 +209,7 @@ if [[ "$inp1" = 6 ]]; then
 	if [[ "$run" = "Y" || "$run" = "y" ]]; then
 		python2 dark-fantasy-2.0.3.py
 	else 
-		cd $HOME/Desktop/DDoS_Downloader
+		cd $HOME/DDoS_Downloader
 		bash downloader.sh
 	fi
 fi
@@ -229,7 +228,7 @@ if [[ "$inp1" = 7 ]]; then
 		sleep 2
 		python2 DDos-anonymous.py
 	else 
-		cd $HOME/Desktop/DDoS_Downloader
+		cd $HOME/DDoS_Downloader
 		bash downloader.sh
 	fi
 fi    
@@ -299,7 +298,7 @@ if [[ "$inp1" = 8 ]]; then
 		going back to the downloader site..
 		"
 		sleep 1
-		cd $HOME/Desktop/DDoS_Downloader
+		cd $HOME/DDoS_Downloader
 		bash downloader.sh
 	fi
 fi    	
@@ -314,7 +313,7 @@ if [[ "$inp1" = 9 ]]; then
 		clear
 		python3 hammer.py -h
 	else 
-		cd $HOME/Desktop/DDoS_Downloader
+		cd $HOME/DDoS_Downloader
 		bash downloader.sh
 	fi
 fi  
@@ -329,7 +328,7 @@ if [[ "$inp1" = 10 ]]; then
 		clear
 		python2 torshammer.py -h
 	else 
-		cd $HOME/Desktop/DDoS_Downloader
+		cd $HOME/DDoS_Downloader
 		bash downloader.sh
 	fi
 fi  	
@@ -347,7 +346,7 @@ if [[ "$inp1" = 11 ]]; then
 		clear
 		python2 fl00d2.py
 	else 
-		cd $HOME/Desktop/DDoS_Downloader
+		cd $HOME/DDoS_Downloader
 		bash downloader.sh
 	fi
 fi  	
@@ -365,7 +364,7 @@ if [[ "$inp1" = 12 ]]; then
 		clear
 		python2 goldeneye.py
 	else 
-		cd $HOME/Desktop/DDoS_Downloader
+		cd $HOME/DDoS_Downloader
 		bash downloader.sh
 	fi
 fi  	
@@ -383,7 +382,7 @@ if [[ "$inp1" = 13 ]]; then
 		clear
 		python2 pntddos.py
 	else 
-		cd $HOME/Desktop/DDoS_Downloader
+		cd $HOME/DDoS_Downloader
 		bash downloader.sh
 	fi
 fi  		
@@ -399,7 +398,7 @@ if [[ "$inp1" = 14 ]]; then
 		clear
 		python2 hulk.py
 	else 
-		cd $HOME/Desktop/DDoS_Downloader
+		cd $HOME/DDoS_Downloader
 		bash downloader.sh
 	fi
 fi  
@@ -415,7 +414,7 @@ if [[ "$inp1" = 15 ]]; then
 		clear
 		python hulk.py
 	else 
-		cd $HOME/Desktop/DDoS_Downloader
+		cd $HOME/DDoS_Downloader
 		bash downloader.sh
 	fi
 fi 
@@ -431,7 +430,7 @@ if [[ "$inp1" = 16 ]]; then
 		clear
 		python2 pyflooder.py 
 	else 
-		cd $HOME/Desktop/DDoS_Downloader
+		cd $HOME/DDoS_Downloader
 		bash downloader.sh
 	fi
 fi 
@@ -449,7 +448,7 @@ if [[ "$inp1" = 17 ]]; then
 		clear
 		./ufonet --gui 
 	else 
-		cd $HOME/Desktop/DDoS_Downloader
+		cd $HOME/DDoS_Downloader
 		bash downloader.sh
 	fi
 fi 
@@ -464,7 +463,7 @@ if [[ "$inp1" = 18 ]]; then
 		clear
 		./pentmenu 
 	else 
-		cd $HOME/Desktop/DDoS_Downloader
+		cd $HOME/DDoS_Downloader
 		bash downloader.sh
 	fi
 fi 
@@ -480,7 +479,7 @@ if [[ "$inp1" = 19 ]]; then
 		clear
 		python3 UNSTABLE.py
 	else 
-		cd $HOME/Desktop/DDoS_Downloader
+		cd $HOME/DDoS_Downloader
 		bash downloader.sh
 	fi
 fi 
@@ -496,7 +495,7 @@ if [[ "$inp1" = 20 ]]; then
 		clear
 		python2 zambie.py
 	else 
-		cd $HOME/Desktop/DDoS_Downloader
+		cd $HOME/DDoS_Downloader
 		bash downloader.sh
 	fi
 fi 
@@ -512,7 +511,7 @@ if [[ "$inp1" = 21 ]]; then
 		clear
 		python2 wascan.py -h
 	else 
-		cd $HOME/Desktop/DDoS_Downloader
+		cd $HOME/DDoS_Downloader
 		bash downloader.sh
 	fi
 fi
